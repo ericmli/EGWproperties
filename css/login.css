@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+}
+
+#container{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+
+}
+p{
+    font-size: 158 px;
+}
