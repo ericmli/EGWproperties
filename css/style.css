@@ -1,24 +1,12 @@
 * {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:arial,helvetica ;
-    text-decoration: none;
-}
-
-body {
     
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:arial,helvetica ;
-    min-width: 100vw;
-    min-height: 100vh;
-    background: #fff;
-    overflow-x: hidden;
-
+    font-family: Georgia, serif;
+    text-decoration: none;
 }
+
 
 /*MENU*/
 .navigation {
@@ -178,15 +166,24 @@ body {
     color: #000;
 }
 
-/*SLIDES*/
+
+#s{
+        
+    background: rgba(0, 0, 0, 0.3);
+    height: 1px;
+    width: 100%;
+    
+}
+
 @media only screen and (max-width: 768px){
 
+    /*SLIDES*/
     .content {
-
-        height: 100%;
+        
         overflow: hidden;
         position: relative;
-        max-height: 500px;
+        content: "";
+    
     }
 
     .select {
@@ -200,7 +197,7 @@ body {
         justify-content: center;
     }
 
-    .bar {
+    .bar{
 
         width: 2vw;
         height: 1vh;
@@ -212,12 +209,12 @@ body {
 
     }
 
-    .bar:hover {
+    .bar:hover{
         background: #fff;
 
     }
 
-    #slide1,#slide2,#slide3,#slide4 {
+    #radio1,#radio2,#radio3,#radio4 {
         display: none;
     }
 
@@ -231,7 +228,7 @@ body {
 
     .slide {
         width: 25%;
-        transition: 0.6s;
+        transition: 1s;
 
     }
 
@@ -244,41 +241,38 @@ body {
 
     }
 
-    #slide1:checked~.s1 {
+    #radio1:checked~.s1 {
         margin-left: 0;
+        
         
     }
 
-    #slide2:checked~.s1 {
+    #radio2:checked~.s1 {
         margin-left: -25%;
+        
     }
 
-    #slide3:checked~.s1 {
+    #radio3:checked~.s1 {
         margin-left: -50%;
+        
     }
 
-    #slide4:checked~.s1 {
+    #radio4:checked~.s1 {
         margin-left: -75%;
+        
     }
 
-    .slide div label input{
-        display: block;
-        position: absolute;
-        top: 50%;
-        color:#fff;
-        left: 5%;
-        font-size: large;
-        text-shadow: 2px 2px 2.2px black;
-        margin-left: 0;
-    }
 
     /*Localização*/
     .menu-localization {
         position: absolute;
         display: flex;
-        background: rgba(0,0,0,.6);
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
         width: 100vw;
         height: 10vh;
+        background: rgba(0,0,0,.6);
         border-radius: 10px;
         bottom: 30%;
         z-index: 1;
@@ -286,37 +280,34 @@ body {
     
     #citys{
         position: relative;
-        width: 44vw;
+        width: 40vw;
         height: 5vh;
         text-align: center;
         background: #fff;
-        top: 20%;
         border: #000;
         border-radius: 20px;
         -webkit-appearance: none;
-        
+        left: 10px;
     }
 
     #type{
         
         position: relative;
         text-align: center;
-        left: 5px;
-        width: 44vw;
+        width: 40vw;
         height: 5vh;
+        left: 20px;
         border: #000;
         border-radius: 20px;
-        top: 20%;
         -webkit-appearance: none;
         
     }
 
     #search{
         position: relative;
-        width: 10vw;
+        width: 20vw;
         left: 10px;
         height: 5vh;
-        top: 20%;
         background: rgba(0,0,0,0);
         border: none;
        }
@@ -330,14 +321,63 @@ body {
 
     }
 
-    #search img:hover{
 
-        opacity: 0.8;
-        transition: 0.7s;
+    /*Texto*/
+
+    .texts {
+        margin:0;
+        width: 90vw;
+        position: relative;
+        text-align: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: -1px;
+
+    }
+    
+    .texts h2{
+        font-size: 20px;
+        color: #555;
+        
         
     }
 
+
+    .texts h1{
+        
+        font-size: 30px;
+        color: #000;
+
+    }
+
+
+    .texts p{
+        color: #000;
+        font-size: 20px;
+        
+        
+    }
     
+
+    .texts .history{
+        
+        color: #6495ED;
+        background: #fff;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 4vh;
+        border: #6495ED solid 0.1px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ;
+    }
+
+
+
+ 
 }
 
 @media only screen and (min-width: 768px) {
@@ -369,7 +409,7 @@ body {
         justify-content: center;
     }
 
-    .bar {
+    .bar{
 
         width: 2vw;
         height: 1vh;
@@ -381,12 +421,12 @@ body {
 
     }
 
-    .bar:hover {
+    .bar:hover{
         background: #fff;
 
     }
 
-    #slide1,#slide2,#slide3,#slide4 {
+    #radio1,#radio2,#radio3,#radio4{
         display: none;
     }
 
@@ -400,7 +440,7 @@ body {
 
     .slide {
         width: 25%;
-        transition: 0.6s;
+        transition: 3s;
 
     }
 
@@ -412,22 +452,26 @@ body {
 
     }
 
-    #slide1:checked~.s1 {
+    #radio1:checked~.s1{
         margin-left: 0;
+        
+        
     }
 
-    #slide2:checked~.s1 {
+    #radio2:checked~.s1 {
         margin-left: -25%;
     }
 
-    #slide3:checked~.s1 {
+    #radio3:checked~.s1 {
         margin-left: -50%;
     }
 
-    #slide4:checked~.s1 {
+    #radio4:checked~.s1 {
         margin-left: -75%;
     }
 
+    
+    
     /*Localização*/
     .menu-localization {
         position: absolute;
@@ -521,27 +565,72 @@ body {
         position: relative;
         width: 50vw;
         text-align: inherit;
-        left: 3vw;
+        margin-left: auto;
+        margin-right: auto;
         letter-spacing: 0.5px;
     }
-
+    
     .texts h2{
-        font-size: 2vw;
-        
+        font-size: 20px;
         color: #555;
+        transition: 0.5s;
+        
     }
     
-    .texts h1{
-
-        font-size: 2vw;
+    .texts h2:hover{
+        transform: translateY(-3px);
+        transition: 0.5s;
         
+    }
+
+    .texts h1{
+        
+        font-size: 30px;
         color: #000;
+        transition: 0.5s;
+        
+    }
+
+    .texts h1:hover{
+        transform: translateY(-2px);
+        transition: 0.5s;
     }
 
     .texts p{
-        color: #000;
-        font-size: 2vh;
+        color: #555;
+        font-size: 20px;
         letter-spacing: -1px;
+        transition: 0.5s;
     }
+    
+    .texts p:hover{
+        transform: translateY(-2px);
+        transition: 0.5s;
+        
+    }
+
+    .texts .history{
+
+        color: #6495ED;
+        background: #fff;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        width: 200px;
+        height: 4vh;
+        border: #6495ED solid 0.1px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s ;
+        
+    }
+
+    .history:hover{
+
+        transition: 0.3s;
+        background: rgba(0, 68, 255, 0.1);
+        
+    }
+    
 
 }
