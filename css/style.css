@@ -168,7 +168,7 @@
 
 
 #s{
-        
+
     background: rgba(0, 0, 0, 0.3);
     height: 1px;
     width: 100%;
@@ -361,7 +361,7 @@
 
     .texts .history{
         
-        color: #6495ED;
+        color: #559;
         background: #fff;
         position: relative;
         display: block;
@@ -369,12 +369,119 @@
         margin-right: auto;
         width: 200px;
         height: 4vh;
-        border: #6495ED solid 0.1px;
+        border: #559 solid 0.1px;
         border-radius: 10px;
         cursor: pointer;
         transition: 0.3s ;
     }
 
+    /*Propriedades*/
+
+    .content_properties{
+        top:20px;
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height:40vh;
+        margin: auto;
+        overflow-x: scroll;
+        
+    }
+
+    .slides_properties {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #radiop1,#radiop2{
+        display: none;
+    }
+
+   
+
+    .slide_properties img {
+        width: 45vw;
+        height: 40vh;
+        border: 4.5px solid #fff;
+        object-fit: cover;
+    }
+
+    /*Informações Propriedades*/
+
+    .price_propertie{
+        position: absolute;
+        z-index: 5;
+        bottom: 10%;
+        margin-left: auto;
+        background: rgba(0, 0, 0, 0.92);
+        width: 44.5%;
+        height: 25%;
+        margin-right: auto;
+        border-radius: 3px;
+        color:#fff;
+        overflow: hidden;
+        font-size: 12px;
+    }
+
+    .price_propertie li{
+
+        position: relative;
+        margin-left: 5px;
+        list-style: none;
+        font-family: 'Raleway', sans-serif;
+
+    }
+    
+    .price_propertie .plocalization{
+        text-transform: uppercase;
+        color: #fff;
+
+        font: small-caps bold 16px/2;
+        
+    }
+
+    .price_propertie .pinformations{
+        color:#559;
+        word-spacing: 10px;
+        
+    }
+
+    .price_propertie .pprice{
+        color:white;
+    }
+
+    .pphone a{
+        position: absolute;
+        color:#fff;
+        font-family: 'Raleway', sans-serif;
+        transition: 1s;
+        
+    }
+
+    .pphone a:hover{
+        background: rgba(255, 255, 255);
+        color:#000;
+        border-radius: 5px;
+        transition: 1s;
+    }
+
+    footer{
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        background: #18181B;
+
+    }
+
+    .s{
+        display: flex;
+        margin: auto;
+        margin-bottom: auto;
+        background: red;
+        width: 90%;
+        height: 100%;
+    }
 
 
  
@@ -434,8 +541,7 @@
         display: flex;
         width: 400%;
         height: 100%;
-        object-fit: cover;
-        text-align: center;
+
     }
 
     .slide {
@@ -448,8 +554,6 @@
         width: 100vw;
         height: 100vh;
         object-fit: cover;
-   
-
     }
 
     #radio1:checked~.s1{
@@ -497,7 +601,7 @@
         transition: 0.7s;
         overflow: hidden;
         -webkit-appearance: none;
-        
+        font-size: 16px;
     }
 
     #citys:hover{
@@ -519,7 +623,7 @@
         transition: 0.7s;
         overflow: hidden;
         -webkit-appearance: none;
-        
+        font-size: 16px;
     }
 
     #type:hover{
@@ -611,14 +715,14 @@
 
     .texts .history{
 
-        color: #6495ED;
+        color: #559;
         background: #fff;
         position: relative;
         display: block;
         margin-left: auto;
         width: 200px;
         height: 4vh;
-        border: #6495ED solid 0.1px;
+        border: #559 solid 0.1px;
         border-radius: 10px;
         cursor: pointer;
         transition: 0.3s ;
@@ -632,5 +736,157 @@
         
     }
     
+    /*Propriedades*/
 
+    .content_properties{
+        top:20px;
+        position: relative;
+        overflow: hidden;
+        width: 90vw;
+        height: 40vh;
+        margin: auto;
+    }
+
+    .slides_properties {
+        display: flex;
+        width: 400%;
+        height: 100%;
+    }
+
+    .select_properties {
+
+        display: block;
+        position: absolute;
+        left:4vw;
+        top:50%;
+        display: flex;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+
+    }
+    
+    .bar_properties1{
+        
+        padding: 15px;
+        box-shadow: 2px -2px 0 1px #000 inset;
+        border: solid transparent;
+        border-width: 0 0 2px 2px;
+        transform: rotate(45deg);
+        cursor: pointer;
+        transition: 0.6s;
+    }
+    
+    .bar_properties2{
+        
+        position: relative;
+        left: 82vw;
+        padding: 15px;
+        box-shadow: 2px -2px 0 1px #000 inset;
+        border: solid transparent;
+        border-width: 0 0 2px 2px;
+        transform: rotate(-135deg);
+        cursor: pointer;
+        transition: 0.6s;
+    }
+
+    .bar_properties1:hover,.bar_properties2:hover{
+        transition: margin-right 2s;
+        
+    }
+
+    #radiop1,#radiop2{
+        display: none;
+    }
+
+    #radiop1:checked~.p1{
+        margin-left: 0;
+
+    }
+
+    #radiop2:checked~.p1 {
+        margin-left: -25%;
+        
+    }
+
+    .slide_properties img {
+        width: 45vw;
+        height: 40vh;
+        border: 4.5px solid #fff;
+        object-fit: cover;
+    }
+
+    /*Informações Propriedades*/
+
+    .price_propertie{
+        position: absolute;
+        z-index: 5;
+        bottom: 10%;
+        margin-left: auto;
+        background: rgba(0, 0, 0, 0.92);
+        width: 49.8%;
+        height: 25%;
+        margin-right: auto;
+        border-radius: 3px;
+        color:#fff;
+        overflow: hidden;
+    }
+
+    .price_propertie li{
+
+        position: relative;
+        margin-left: 5px;
+        list-style: none;
+        font-family: 'Raleway', sans-serif;
+        
+    }
+    
+    .price_propertie .plocalization{
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 20px;
+        font: small-caps bold 16px/2;
+        
+    }
+
+    .price_propertie .pinformations{
+        color:#559;
+        word-spacing: 20px;
+    }
+
+    .price_propertie .pprice{
+        color:white;
+    }
+
+    .pphone a{
+        position: absolute;
+        color:#fff;
+        font-family: 'Raleway', sans-serif;
+        transition: 1s;
+        
+    }
+
+    .pphone a:hover{
+        background: rgba(255, 255, 255);
+        color:#000;
+        border-radius: 5px;
+        transition: 1s;
+    }
+
+    footer{
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        background: #18181B;
+
+    }
+
+    .s{
+        display: flex;
+        margin: auto;
+        margin-bottom: auto;
+        background: red;
+        width: 90%;
+        height: 100%;
+    }
 }
